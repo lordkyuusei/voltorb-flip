@@ -1,0 +1,23 @@
+:root {
+	--border-color: hsl(5, 93%, 58%);
+
+	--cell-color: hsl(9, 28%, 61%);
+	--cell-shadow: hsl(9, 28%, 45%);
+
+	--cell-marked-color: hsl(35, 79%, 56%);
+	--cell-marked-color-2: hsl(35, 79%, 40%);
+	--light-green: hsl(152, 60%, 39%);
+	--dark-green: hsl(162, 68%, 30%);
+
+	--purple: hsl(285, 67%, 63%);
+	--red: hsl(13, 70%, 60%);
+	--blue: hsl(211, 93%, 58%);
+	--yellow: hsl(35, 79%, 56%);
+	--green: hsl(120, 45%, 45%);
+}
+
+body {
+	font-family: 'Cascadia Code';
+	margin: 0;
+	box-sizing: border-box;
+}
