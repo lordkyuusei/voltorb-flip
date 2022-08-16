@@ -14,7 +14,8 @@
     <div>
         {#if $isWon}
             Vous avez remporté <strong>{$score.coins}</strong>🪙 cette manche,
-            pour un total de <strong>{$score.score}</strong> points.
+            pour un total de <strong>{$score.score + $score.coins}</strong>
+            points.
             <br />
             <br />
             Avancée vers le niveau <strong>{$level + 1} !</strong>
