@@ -17,7 +17,7 @@
 }
 
 body {
-	font-family: 'Cascadia Code';
+	font-family: 'Cascadia Code', 'Consolas', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 	margin: 0;
 	box-sizing: border-box;
 	min-height: 100vh;

@@ -105,28 +105,21 @@
 
 <style>
     section {
+        width: 100%;
         display: flex;
-        padding: 2em;
         gap: 1.5em;
         flex-direction: column;
         place-content: center;
         place-items: center;
-        font-size: 1.5em;
 
         background-color: var(--light-green);
         position: relative;
         z-index: 0;
     }
 
-    @media screen and (max-width: 768px) {
-        section {
-            font-size: 0.9em;
-        }
-    }
-
     @media screen and (max-width: 480px) {
         section {
-            font-size: 0.75em;
+            font-size: 0.7em;
         }
     }
 
@@ -142,7 +135,6 @@
         place-content: center;
         place-items: center;
         gap: 1.5em;
-        width: 100%;
         height: 100%;
         position: relative;
         z-index: 2;
@@ -161,7 +153,7 @@
     }
 
     .voltorb-last-row {
-        place-content: flex-start;
+        place-content: center;
     }
 
     .voltorb-lines-background-horizontal,
