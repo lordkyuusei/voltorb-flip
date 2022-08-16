@@ -35,6 +35,12 @@
         }
     }
 
+    @media screen and (max-width: 375px) {
+        section {
+            font-size: 1.53em;
+        }
+    }
+
     img {
         height: 100%;
         width: auto;

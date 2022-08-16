@@ -111,15 +111,28 @@
         flex-direction: column;
         place-content: center;
         place-items: center;
+        font-size: 1.5em;
 
         background-color: var(--light-green);
         position: relative;
         z-index: 0;
     }
 
+    @media screen and (max-width: 768px) {
+        section {
+            font-size: 0.9em;
+        }
+    }
+
     @media screen and (max-width: 480px) {
         section {
             font-size: 0.75em;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        section {
+            font-size: 0.6em;
         }
     }
 
