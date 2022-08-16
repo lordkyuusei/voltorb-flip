@@ -19,6 +19,7 @@
 	onMount(() => {
 		if (browser) {
 			audio = new Audio("loop.mp3");
+			audio.loop = true;
 		}
 	});
 </script>
