@@ -42,8 +42,9 @@
     }
 
     img {
-        height: 100%;
-        width: auto;
+        height: auto;
+        width: 1em;
+        image-rendering: pixelated;
     }
 
     .coins,

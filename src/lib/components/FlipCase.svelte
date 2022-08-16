@@ -77,8 +77,9 @@
     }
 
     img {
-        height: 1em;
-        width: auto;
+        height: auto;
+        width: 1em;
+        image-rendering: pixelated;
     }
 
     .isFlipped {
