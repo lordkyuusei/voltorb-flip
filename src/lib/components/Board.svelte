@@ -117,6 +117,12 @@
         z-index: 0;
     }
 
+    @media screen and (max-width: 480px) {
+        section {
+            font-size: 0.75em;
+        }
+    }
+
     .voltorb-board {
         display: flex;
         flex-direction: column;

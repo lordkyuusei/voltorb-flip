@@ -29,6 +29,12 @@
         z-index: 3;
     }
 
+    @media screen and (max-width: 480px) {
+        section {
+            font-size: 1.52em;
+        }
+    }
+
     img {
         height: 100%;
         width: auto;
