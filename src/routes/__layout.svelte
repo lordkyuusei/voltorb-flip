@@ -60,16 +60,9 @@
 		text-align: center;
 	}
 
-	.socials {
-	}
-
 	.voltorb-flip {
 		flex-direction: column;
 		place-content: center;
-	}
-
-	.voltorb-flip > h2 {
-		margin: 0.2em;
 	}
 
 	.voltorb-flip > span {

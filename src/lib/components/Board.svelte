@@ -41,13 +41,14 @@
 
     const handleClose = () => {
         showOverScreen = false;
+
         if ($isWon) {
             score.applyScore();
             level.increaseLevel();
         } else {
             score.reset();
-            level.reset();
         }
+
         game.reveal();
         game.reset($level);
     };

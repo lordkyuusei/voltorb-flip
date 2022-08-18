@@ -1,12 +1,22 @@
 <script lang="ts">
-    import { createEventDispatcher } from "svelte";
-    import { isWon, score, level } from "$lib/store/exports";
+    import { createEventDispatcher, onMount } from "svelte";
+    import { score, level, isWon, flippedCards } from "$lib/store/exports";
 
     const dispatch = createEventDispatcher();
+
+    let currentLevel: number;
 
     const onClose = () => {
         dispatch("close");
     };
+
+    onMount(() => {
+        if ($isWon === false) {
+            currentLevel = $level;
+            const nextLevel = Math.min($flippedCards, $level);
+            level.reset(nextLevel);
+        }
+    });
 </script>
 
 <section>
@@ -25,7 +35,11 @@
             <strong>{$score.coins}</strong>🪙.
             <br />
             <br />
-            Retour au niveau <strong>1 !</strong>
+            {#if $level < currentLevel}
+                Retour au niveau <strong>{$level} !</strong>
+            {:else}
+                Pas de perte de niveau cette fois :) courage !
+            {/if}
         {/if}
     </div>
     <footer>
